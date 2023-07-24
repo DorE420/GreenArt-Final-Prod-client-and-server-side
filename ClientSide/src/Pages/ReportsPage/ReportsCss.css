@@ -1,0 +1,346 @@
+#mainBodyReports{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#mainBodyIMG{
+    width: 100%;
+    height: 100%;
+    background-image: url(Green-Wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mainBodyIMGBlurrt{
+    width: 100%;
+    height: 100%;
+}
+#headerReports{
+    height: 8%;
+    max-height: 8%;
+    padding: 0px 50px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+#headerReports h1{
+    color: #539165c6;
+    text-shadow: 1px 1px 5px #3a67479f;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+#innerMainReports{
+    width: 100%;
+    height: 92%;
+    max-width: 100%;
+    max-height: 92%;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.sideBar ul li #icon1,
+.sideBar ul li #text1{
+    color: #17B169;
+}
+
+/*all The Style for event - Right*/
+#upcomingEventRight {
+    text-align: right; 
+    direction: rtl; 
+    width: 22%;
+    height: 95%;
+    max-width: 22%;
+    max-height: 95%;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.475), rgba(255,255,255,0));
+    box-shadow: 0 8px 32px 0 rgba(127, 127, 127, 0.228);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: auto;
+}
+.upcomingEventRightHeader{
+    height: 15%;
+    max-height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #539165dc;
+}
+.upcomingEventRightHeader h1{
+    font-weight: bolder;
+    font-size: large;
+    color: #539165dc;
+    margin: 0;
+}
+.upcomingEventRightHeaderBody{
+    padding-top: 5px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+.dataTABLEmain{
+    height: 87%;
+}
+.dataTABLEmain .sc-beqWaB .ewhdCu .rdt_Table{
+    background-color: inherit;
+}
+.upcomingEventRightHeaderBody a{
+    height: 10%;
+}
+.upcomingEventRightHeaderBody button{
+    background-image: linear-gradient(to right, #17B169 0%, #a8e063  51%, #17B169  100%);
+    padding: 15px 45px;
+    text-align: center;
+    font-weight: bolder;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border: none;
+    border-radius: 10px; 
+}
+.upcomingEventRightHeaderBody button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.dataEventPerWeek{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.infoPerEvent-Header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.infoPerEvent-Header label:first-of-type{
+    font-weight: bolder;
+    padding-right: 0;
+}
+.infoPerEvent-Header label{
+    direction: ltr;
+    font-weight: bolder;
+    padding-right: 5px;
+}
+.infoPerEvent-Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+.infoPerEvent-Main label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+    direction: ltr;
+}
+/*all the Style for the left part*/
+#leftDiv{
+    height: 95%;
+    width: 72%;
+    max-height: 95%;
+    max-width: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftDiv1{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.475), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.228);
+    border: 2px solid rgba(255, 255, 255, 0.64);
+    border-radius: 20px;
+    padding:10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftDiv1Inner{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.leftDiv1Inner-Div{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+.leftDiv1Inner-Img{
+    height: 60%;
+}
+.innerDivTitle{
+    font-weight: bolder;
+    font-size: larger;
+    color: #539165dc;
+    padding-bottom: 10px;
+}
+.leftDiv2{
+    height: 58%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.475), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(127, 127, 127, 0.228);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 20px;
+    direction: rtl;
+    padding:10px;
+}
+.tabsHeaders{
+    height: 8%;
+}
+.tabPanelTemplate_Step2{
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top3Items{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.top3Items-Top{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top3Items-Top label{
+    font-weight: bold;
+}
+.imgItemSold{
+    height: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.imgItemSold img{
+    height: 100%;
+    width: 100%;
+    object-fit:fill; 
+}
+.labelItemsSold{
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.labelItemsSold.itemButom{
+    background-image: radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 0%, rgba(160,6,6,1) 90% );
+}
+.labelItemsSold label{
+    font-weight: bold;
+    padding: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.itemAlert{
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intLabel{
+    padding-right: 5px;
+}
+.chartDivInner{
+    height: 100%;
+    width: 100%;
+}
+.chartDivInner .selectOption{
+    width: 100%;
+    max-width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#selectYEAR{
+    border: 5px red;
+    width: 10%;
+}
+#selectYEAR .css-13cymwt-control{
+    background-color: inherit;
+}
+#selectMonth{
+    width: 88%;
+    max-width: 88%;
+}
+#selectMonth .css-13cymwt-control{
+    background-color: inherit;
+}
+#selectMonth .css-1p3m7a8-multiValue{
+    background-color: #17b1695e;
+}
+#selectMonth .css-1p3m7a8-multiValue .css-wsp0cs-MultiValueGeneric{
+    font-size: 70%;
+}
+#selectMonth .css-1xc3v61-indicatorContainer,
+#selectYEAR .css-1xc3v61-indicatorContainer{ 
+    padding: 0;
+}
+#selectYEAR .css-qbdosj-Input{
+    font-size: 70%;
+}
+#selectYEAR .css-1fdsijx-ValueContainer{
+    font-size: 80%;
+    font-weight: bold;
+    color: #28C76F;
+}
+.barCharClass{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.importLabel{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #17B169;
+    text-shadow: 0px 0px 8px #3a67479f;
+}

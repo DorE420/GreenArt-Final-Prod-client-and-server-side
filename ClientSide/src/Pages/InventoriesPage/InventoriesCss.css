@@ -1,0 +1,229 @@
+#mainBodyInventories{
+    width: 100%;
+    height: 100%;
+}
+#headerInventories{
+    height: 10%;
+    padding: 0px 60px 0px 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:space-between;
+}
+#headerInventories h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+#headerInventories .buttomHeader{
+    height: 50px;
+    width: 100px;
+    background-color: steelblue;
+    box-shadow: 0px 0px 15px 3px rgba(70, 131, 180, 0.425);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#dataTableInventories{
+    height: 90%;
+    width: 100%;
+}
+#dataTableInventories .bSqufN{
+    max-height: 100%;
+}
+#dataTableInventories .bSqufN::-webkit-scrollbar{
+    display: none;
+}
+#dataTableInventories .gNJUsR{
+    max-height: 100%;
+}
+.buttomHeader span{
+    color: #fff;
+    font-weight: bold;
+}
+.buttomHeader .icon{
+    color: #fff;
+}
+.buttonInventories{
+    background-color:rgb(54, 136, 218);
+    border: 1px rgb(54, 136, 218);
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 5px 0px 5px;  
+}
+#innerMainInventories{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+#headerInnerMainInventories{
+    height: 10%;
+    padding-left: 30px;
+    padding-right: 15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row-reverse;
+    border-bottom: 2px solid #17B169;
+}
+#innerMainInventories1{
+    width: 97%;
+    height: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+#innerMainInventories1 #innerMainInventories1BodyCatalog{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+#innerMainInventories .dlfHg div:first-child{
+    overflow: visible;
+}
+.idInventories{
+    font-weight: bold;
+}
+.imgBXTbaleItem{
+    height: 45px;
+    width: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #043927;
+}
+.imgBXTbaleItem img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+#innerMainInventories1 .cNSxXl{
+    padding: 0px;
+}
+
+
+
+/*CSS for the pop up - add new Inventories*/
+.popUpInventories{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.innerPopUpInventories{
+    position:relative;
+    padding: 15px;
+    height: 550px;
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+.innerInventories1{
+    height: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.innerInventories2{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #17B169;
+}
+.innerInventories2 h1{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.innerInventories3{
+    height: 75%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.innerInventories3-Div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    width: 80%;
+}
+.innerInventories3-Div input{
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    text-align: right;
+    outline: none;
+    direction: rtl;
+}
+.innerInventories3-Div span{
+    padding-right: 10px;
+    color: #ced4da;
+}
+.innerInventories4{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerInventories4 button{
+    background-image: linear-gradient(to right, #17B169 0%, #a8e063  51%, #17B169  100%);
+    padding: 15px 15px;
+    text-align: center;
+    font-weight: bolder;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border: none;
+    border-radius: 10px; 
+}
+.innerInventories4 button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.h1PopUpInventories{
+    text-align: center;
+    font-size: 15px;
+}
+.registerEmployee {
+    position: absolute;
+    top: 200px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: right;
+}
+.ltrInput{
+    direction: ltr;
+}

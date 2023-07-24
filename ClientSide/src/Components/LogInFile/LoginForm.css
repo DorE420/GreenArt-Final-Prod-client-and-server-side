@@ -1,0 +1,318 @@
+#mainPageLoginForm{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  transition: 500ms;
+  opacity: 1;
+}
+/*#mainPageLoginForm::after{
+  transform: translateY(-100%);
+  animation: 2s ease-out;
+  opacity: 0;
+}*/
+#mainPageLoginForm > #imgLoginForm{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  background-image: url(BG1.jpeg);
+  animation: change 20s infinite ease-in-out;
+  opacity: 0.6;
+  background-blend-mode:lighten;
+}
+/*Img BG Change*/
+@keyframes change{
+  0%{
+    background-image: url(BG2.jpeg);
+  }
+  20%{
+    background-image: url(BG3.jpeg);
+  }
+  40%{
+    background-image: url(BG4.jpeg);
+  }
+  60%{
+    background-image: url(BG5.jpeg);
+  }
+  80%{
+    background-image: url(BG6.jpeg);
+  }
+  100%{
+    background-image: url(BG7.jpeg);
+  }
+}
+#mainPageLoginForm > #centerFlip{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 25%;
+}
+.react-card-flip{
+  height: 100%;
+  width: 100%;
+}
+#innerLogInCover{
+  background-color: rgba(225, 225, 225, 0.419);
+  box-shadow: 0 25px 50px rgb(225,225,225,0.25);
+  backdrop-filter: blur(15px);
+  border: 2px solid #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+  text-align: right;
+}
+.loginControlImg{
+  height: 30%;
+  width: 100%;
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(GREEN-ART_3.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.labelExplain{
+  height: 5%;
+  width: 100%;  
+  color: #fff;
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0px 0px 8px #0a58ca;
+}
+.MainloginControlers1, .MainloginControlers2 {
+  height: 50%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around ;
+}
+.loginControl{
+  width: 100%;
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+#clickFlip{
+  height: 5%;
+  font-weight: bold;
+}
+#clickFlip .arrowICON{
+  color: #0a58ca;
+  font-weight: bold;
+
+}
+.passwordTransfer{
+  width: 80%;
+  height: 10%;
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MainloginControlers1 .loginControl{
+  height: 25%;
+}
+.loginControl .idIcon,
+.loginControlForm .idIcon{
+  position: absolute;
+  color: #fff;
+  left: 0%;
+  transition: 0.5s;
+}
+.MainloginControlers2 .loginControl{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formPassword{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+}
+.loginControlForm{
+  width: 100%;
+  height: 25%;
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginControl input,
+.loginControlForm input{
+  font: inherit;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  direction: rtl;
+  outline: none;
+  transition: 0.5s;
+  color: #5391659f;
+}
+.loginControl span,
+.loginControlForm span{ 
+  position: absolute;
+  right: 0px;
+  color: #fff;;
+  font-weight: bold;
+  background: transparent;
+  padding: 0px;
+  transition: 0.5s;
+}
+.loginControl input:valid ~ span,
+.loginControl input:focus ~ span,
+.loginControlForm input:valid ~ span,
+.loginControlForm input:focus ~ span
+{
+  color: #5391659f;
+  font-weight: bold;
+  transform: translateY(-100%) translateX(3px);
+  background: transparent;
+  padding: 0 5px 0 5px;
+  font-size: 0.8em;
+}
+.loginControl input:valid,
+.loginControl input:focus,
+.loginControlForm input:valid,
+.loginControlForm input:focus
+{
+  border-bottom: 3px solid #5391659f;
+}
+.loginControl input:valid ~ .idIcon,
+.loginControl input:focus ~ .idIcon,
+.loginControlForm input:valid ~ .idIcon,
+.loginControlForm input:focus ~ .idIcon{
+  color: #5391659f;
+}
+.password-input-wrapper{
+  position: relative;
+}
+.password-input-icon{
+  position: absolute;
+  cursor: pointer;
+  color: #fff;
+}
+.loginControl .loginButton,
+.loginControlForm .loginButton
+{
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+.innerLogInCover1{
+  transform: rotateY(180deg);
+}
+#passwordUnvisibal{
+  visibility: hidden;
+  height: 0%;
+  width: 0%;
+}
+
+
+.iconSocial{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  width: 15%;
+  left: 0px;
+  bottom: 0px;
+}
+.iconRap{
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50% ;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  transition: transform 1.25s;
+}
+.iconSocial img{
+  width: 100%;
+  height: 100%;
+  object-fit:fill; 
+  background-color:olivedrab;
+}
+.iconRap:hover{
+  transform: rotate(360deg);
+}
+
+
+.Toastify__toast-theme--light{
+  text-align: right;  
+
+}
+
+
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  animation: fade-in 0.5s ease-out;
+}
+.message {
+  font-size: 16px;
+  text-align: center;
+}
+  
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+.popup.hide {
+  animation: fade-out 0.5s ease-out;
+}
+  
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+  

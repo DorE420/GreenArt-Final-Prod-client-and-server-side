@@ -1,0 +1,333 @@
+#mainBodyVehicles{
+    width: 100%;
+    height: 100%;
+}
+#headerVehicles{
+    height: 10%;
+    padding: 0px 60px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+#headerVehicles h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 5px;
+}
+#bigInnerMainVehiclesFirst{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#bigInnerMainVehicles{
+    width: 97%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+#headerbigInnerMainVehicles{
+    height: 10%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction:row;
+    border-bottom: 2px solid #17b169;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+#innerMainVehicles{
+    height: 90%;
+    width: 100%;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+}
+.buttonVehicles{
+    background-color:rgb(54, 136, 218);
+    border: 1px rgb(54, 136, 218);
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+#vehiclesTable{
+    width: 67%;
+    border-left: 2px solid #17B169;
+}
+#vehiclesTable .hcgwbo{
+    white-space:unset;
+}
+#vehiclesInfo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vehiclesInfoHeader{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.vehiclesInfoHeader h1{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.vehiclesInfoMain{
+    height: calc( 91% - 55px);
+    width: 100%;
+}
+.vehiclesInfoMain .jWpMhA{
+    min-height: 0px;
+}
+.vehiclesInfoMain .dpxigv{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.topInfo{
+    background-color:white;
+    box-shadow: 0px 0px 8px 10px rgba(184, 184, 184, 0.189); 
+    border-radius: 15px;
+    height: 35%;
+    width: 90%;
+    overflow: hidden;
+}
+.bottumInfo{
+    background-color: white;
+    box-shadow: 0px 0px 8px 10px rgba(184, 184, 184, 0.189); 
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+}
+.innerheaderInfo{
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1px solid #5391659f;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: #53916582 ;
+}
+.dataTableVehicles{
+    padding: 5px;
+    border-radius: 10px; 
+}
+.iconBC{
+    color:rgb(54, 136, 218);
+}
+.iconsDataTable{
+    width: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.dataMaintance{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dataMaintanceleft{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataMaintanceright{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 90%;
+}
+.infoDataMaintanceright{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+.infoDataMaintanceright span{
+    font-weight: bold;
+}
+.noDataFound{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noDataFound h1{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+/*CSS For New Vehicles */
+#vehiclesPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+#vehiclesInnerPopUp{
+    position:relative;
+    padding: 15px;
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+.innervehiclesInnerPopUp1{
+    height: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.innervehiclesInnerPopUp2{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #17B169;
+}
+.innervehiclesInnerPopUp2 h1{
+    color: #17B169;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.innervehiclesInnerPopUp3{
+    height: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.innervehiclesInnerPopUp4{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divTimeInput{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divTimeInput .dateInputMaintenance{
+    border-radius: 5px;
+    border: 1px solid slategrey;
+    height: 40px;
+    width: 90%;
+}
+.react-datepicker__input-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.inputsInfo{
+    display: grid;
+    flex-direction: column;
+    margin-top: 10px;    
+}
+.inputsInfo label{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.inputsInfo input{
+    display: flex;
+    text-align: right;
+    justify-self:right;
+    width: 100%;
+}
+.delete-confirm-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.delete-confirm-popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(138, 32, 32, 0.517);
+    width: 300px;
+    text-align: center;
+}  
+.delete-confirm-popup-content h3 {
+    margin-bottom: 20px;
+    color: firebrick;
+    font-weight: bold;
+    letter-spacing: 2px;
+}  
+.delete-confirm-popup-content button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.delete-confirm-popup-content button .delete1{
+    background-color:rgba(255, 99, 71, 0.555);
+} 
+.delete-confirm-popup-content button:hover {
+    background-color: #43a047;
+}
+  

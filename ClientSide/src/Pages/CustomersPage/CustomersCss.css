@@ -1,0 +1,188 @@
+#mainBodyCustomers{
+    width: 100%;
+    height: 100%;
+}
+#headerCustomers{
+    height: 10%;
+    padding: 0px 60px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+#headerCustomers h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.buttonCustomers{
+    background-color:rgb(54, 136, 218);
+    border: 1px rgb(54, 136, 218);
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+#innerMainCustomers{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#inner1MainCustomers{
+    width: 97%;
+    height: 100%;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+#innerRightCusotmer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
+    border-radius: 15px;
+}
+#innerLeftCusotmer{
+    background-color:white;
+    width: 25%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.headerInnerLeftCusotmer{
+    height: 10%;
+    border-bottom: 2px solid #17B169;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    padding: 0px 15px 0px 0px;
+}
+.headerInnerRightCusotmer{
+    height: 10%;
+    border-bottom: 2px solid #17B169;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 20px 0px 40px;
+}
+.mainInnerRightCusotmer{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    padding: 0px 0px 0px 0px;
+}
+.infoDivCustomer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.infoDivCustomer div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-top: 5px;
+}
+.infoDivCustomer label{
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+.dqfNny{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/*CSS For New Customers*/
+.costumerPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.costumerInnerPopUp{
+    position:relative;
+    padding: 15px;
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 5px 5px 50px -1px #f5f5f5;
+    border: 2px solid #5391659f;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.innerPopUP1{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 5%;
+}
+.innerPopUP2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #5391659f;
+    height: 10%;
+}
+.innerPopUP2 h1{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.innerPopUPMiddle{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 75%;
+    width: 100%;
+    padding-top: 10px;
+}
+.innerPopUP3{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.innerPopUP4{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.innerPopUP5{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 

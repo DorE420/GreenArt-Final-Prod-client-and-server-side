@@ -1,0 +1,122 @@
+#mainBodyCatalog{
+    width: 100%;
+    height: 100%;
+}
+#headerCatalog{
+    height: 10%;
+    padding: 0px 40px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom: 1px solid #5391659f;
+    background-color: #fafafa;
+}
+#headerCatalog h1 {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+.buttonCatalog{
+    background-color:rgb(54, 136, 218);
+    border: 1px rgb(54, 136, 218);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+}
+#innerMainCatalog{
+    overflow: scroll;
+    width: 100%;
+    height: 90%;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.plant-catalog {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:space-around;
+  padding: 1rem;
+}
+.plant-category {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(144, 238, 144, 0.1);
+  border: 2px solid rgba(144, 238, 144, 0.5);
+  border-radius: 10px;
+  width: 32%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  flex-grow: 1;
+} 
+.plant-category.big {
+  background-color: rgba(144, 238, 144, 0.3);
+}
+.plant-category.medium {
+  background-color: rgba(144, 238, 144, 0.2);
+}  
+.plant-category.small {
+  background-color: rgba(144, 238, 144, 0.1);
+}
+.plant-category h2 {
+  margin-bottom: 0.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: darkgreen;
+}
+.plants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.plant-card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid rgba(144, 238, 144, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}  
+.plant-card:hover {
+  transform: scale(1.05);
+}
+.plant-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.plant-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: darkgreen;
+}
+@media (max-width: 768px) {
+  .plant-category {
+    width: 100%;
+  }
+}
+
+.plant-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: darkgreen;
+  font-weight: bold;
+} 

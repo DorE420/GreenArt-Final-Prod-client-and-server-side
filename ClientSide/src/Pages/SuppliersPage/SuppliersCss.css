@@ -1,0 +1,212 @@
+/*CSS for the Main Page Suppliers*/
+#mainBodySuppliers{
+    width: 100%;
+    height: 100%; 
+}
+#headerSuppliers{
+    height: 10%;
+    padding: 0px 60px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+#headerSuppliers h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+#innerMainSuppliers{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+#inner1MainSuppliers{
+    width: 97%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+    background-color: white;
+}
+#innerRight{
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: scroll;
+}
+#innerLeft{
+    background-color:white;
+    width: 25%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.headerInnerLeft{
+    height: 10%;
+    border-bottom: 1px solid #5391659f;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content:right;
+    align-items:center;
+    padding: 0px 15px 0px 0px;
+}
+.headerInnerRight{
+    height: 10%;
+    border-bottom: 2px solid #5391659f;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 20px 0px 40px;
+}
+.addBOX .icon{
+    color: #fff;
+    font-size: 2em;
+}
+.mainInnerRight{
+    height: 90%;
+    width: 100%;
+}
+.mainInnerRight .bSqufN{
+    max-height: 100%;
+}
+.divInfoSuppliers{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.divInfoSuppliers div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-top: 5px;
+}
+.divInfoSuppliers label{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/*CSS for the PopUp New Suppliers*/
+#popUpSuplliers{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+#innerPopUpSuplliers{
+    position:relative;
+    padding: 15px;
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 5px 5px 50px -1px #f5f5f5;
+    border: 2px solid #5391659f;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    animation: "dropTop .3s linear";
+}
+.innerSuppliers1{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 5%;
+}
+.innerSuppliers2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #5391659f;
+    height: 10%;
+}
+.innerSuppliers2 h1{
+    color: #17B169;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.innerSuppliers3{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.inputSuppliers{
+    height: 12%;
+    position:relative;
+    margin-top: 5px;
+    width: 90%;
+    text-align: right;
+}
+.inputSuppliers input{
+    height: 95%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid slategrey;
+    outline: none;
+    text-align: right;
+    font-size: 0.7em;
+    padding-right: 10px;
+    direction: rtl;
+}
+.inputSuppliers span{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color:slategrey;
+    background-color: none;
+    padding: 0px;
+    transition: 0.5s;
+}
+.inputSuppliers input:valid ~ span,
+.inputSuppliers input:focus ~ span
+{
+    color: black;
+    transform: translateY(-14px);
+    background-color:white;
+    border-left:1px solid #5391659f;
+    border-right: 1px solid #5391659f;
+    padding: 0 5px 0 5px;
+    font-size: 0.8em;
+}
+.inputSuppliers input:valid,
+.inputSuppliers input:focus
+{
+    border:1px solid #5391659f;
+}
+.inputSuppliers .react-datepicker-wrapper{
+    height: 95%;
+}
+.inputSuppliers .react-datepicker__input-container{
+    height: 100%;
+}
+.innerSuppliers4{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

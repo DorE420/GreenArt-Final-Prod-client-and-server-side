@@ -1,0 +1,1224 @@
+#mainBodyMainPage{
+    width: 100%;
+    height: 100%;
+}
+#headerMainPage{
+    height: 10%;
+    padding: 0px 40px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content: right;
+}
+#headerMainPage h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+#innerMainPage{
+    height: 90%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+#calanderRightHead{
+    background-color:white;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#calanderRightHeadInner1{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--fc-border-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+#innerCalendarHeaderLeft,
+#innerCalendarHeaderRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#innerCalendarHeaderLeft{
+    width: 5%;
+}
+#innerCalendarHeaderRight{
+    width: 30%;
+    justify-content: space-around;
+    align-items:flex-end;
+    padding: 0;
+    margin: 0;
+}
+#innerCalendarHeaderLeft div,
+#innerCalendarHeaderRight div{
+    height: 90%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#innerCalendarHeaderLeft div img,
+#innerCalendarHeaderRight div img{
+    height: 50%;
+}
+#innerCalendarHeaderRight div label{
+    font-size: small;
+    color: #8f8f8f;
+}
+#calanderRightHeadInner2{
+    width: 100%;
+    height: 40%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#calanderRightHeadInner2Split{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#calanderRightHeadInner2Split img{
+    height: 60%;
+}
+#calanderRightHeadInner2Split label{
+    font-size: large;
+    font-weight: bold;
+    color: #0d6efd;
+}
+#calanderRight{
+    background-color:white;
+    width: 100%;
+    height: 90%;
+}
+/*@media print {
+    body * {
+        visibility: visible;
+    }
+    #calanderRight {
+        visibility: visible;
+    }
+}*/
+
+
+
+/*CSS For Fullcalander*/
+.fc-direction-ltr{
+    direction: rtl;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.fc .fc-scroller-harness{
+    direction: rtl;
+}
+.fc-direction-ltr .fc-timegrid-slot-label-frame{
+    text-align: center;
+}
+.fc .fc-col-header-cell-cushion {
+    word-wrap: break-word;  
+}
+.fc .fc-daygrid-day-top{
+    flex-direction: row;
+}
+.fc .fc-toolbar.fc-header-toolbar{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fc-toolbar-chunk{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fc .fc-button-primary{
+    /*--bs-btn-color: #fff;
+    --bs-btn-bg: #78c2ad;
+    --bs-btn-border-color: #78c2ad;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #66a593;
+    --bs-btn-hover-border-color: #609b8a;
+    --bs-btn-focus-shadow-rgb: 140,203,185;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #609b8a;
+    --bs-btn-active-border-color: #5a9282;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #78c2ad;
+    --bs-btn-disabled-border-color: #78c2ad;*/
+
+    /*background-color: #78c2ad;
+    border-color: #78c2ad;*/
+    border-radius: 50%;
+    padding: 0;
+}
+.fc-today-button .fc-button .fc-button-primary{
+    color: #17B169;
+}
+.fc-toolbar-title{
+    color: #8f8f8f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.fc-prev-button .fc-button .fc-button-primary{
+    background-color: #17B169;
+}
+/*Header Row 2 in the calendar*/
+/*.fc .fc-daygrid-day-frame{
+    display: flex;
+    justify-content: center;
+}
+.fc-daygrid-day-events::before{
+    display: flex;
+    justify-content: center;
+    content: "Lin";
+}
+.fc-daygrid-day-events::after{
+    display: flex;
+    justify-content: center;
+    content: "Lin12";
+}*/
+
+
+
+/*CSS for the POPUP info Event Calendar*/
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper{
+    height: 220px;
+    max-height: 220px;
+    width: 250px;
+    max-width: 250px;
+}
+.eventInfoPopUP{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.eventInfoPopUPInnerClose{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 5%;
+    margin: 0;
+    padding: 0;
+}
+.eventInfoPopUPInnerClose img{
+    height: 15px;
+}
+.eventInfoPopUPInner-Header{
+    /*background-color: #0d6dfd4c;*/
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 3px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.eventInfoPopUPInner-Header img{
+    height: 20px;
+}
+.eventInfoPopUPInner-Header label{
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: #0d6efd;
+}
+.eventInfoPopUPInner{
+    width: 100%;
+    height: 18%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+}
+.eventInfoPopUPInner img{
+    height: 25px;
+}
+.eventInfoPopUPInner p,
+.eventInfoPopUPInner label{
+    margin: 0;
+}
+.eventInfoPopUPInner label{
+    direction: rtl;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.eventInfoPopUPInnerDate{
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.eventInfoButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-right: 75%;
+    height: 10%;
+    width: 100%;
+    margin: 0;
+}
+.eventInfoButton img{
+    height: 25px;
+}
+
+
+/*New Event Pop Up*/
+.popUpEvents{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 56, 56, 0.192);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.innerPopUpEvents{
+    position:relative;
+    padding: 25px;
+    width: 40%;
+    height: 70%;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(193, 193, 193, 0.867);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.innerEvents1{
+    height: 2%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.innerEvents1 img{
+    height: 20px;
+}
+.innerEvents2{
+    height: 13%;
+    max-height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #17B169;
+}
+.innerEvents2 .css-10mg1vw-MuiStepper-root,
+.innerEvents2 .css-1187icl{
+    direction: rtl;
+    width: 100%;
+}
+.innerEvents2 .css-n7tliy-MuiStep-root .css-zpcwqm-MuiStepConnector-root{
+    left: calc(50% + 20px);
+    right: calc(-50% + 20px);
+}
+.innerEvents2 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+    color: #5391659f ;
+}
+.innerEvents2 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+    color: #17B169;
+
+}
+.innerEvents2 .css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+   margin-top: 2px; 
+   font-weight: bold;
+}
+.innerEvents3{
+    height: 85%;
+    max-height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Page 1 - Event Info*/
+.Step1Main{
+    height: 90%;
+    max-height: 90%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.Step1MainInner{
+    height: 100%;
+    width: 100%;
+    /*padding-right: 10px;
+    padding-left: 10px;*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.divInfoInput,
+.timeRange{
+    height: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.divInfoInput{
+    width: 100%;
+}
+.timeRange{
+    width: 90%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.divInfoInput input{
+    font: inherit;
+    font-size: 1em;
+    padding-right: 8%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ced4da;
+    width: 90%;
+    height: 50%;
+    text-align: right;
+    direction: rtl;
+}
+.divInfoInput img{
+    padding-bottom: 30px;
+    height: 60px;
+    position: absolute;
+    right: 11%;
+}
+.timeRange_rdt{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 45%;
+}
+.timeRange_rdt img{
+    height: 20px;
+    position: absolute;
+    right: 12%;
+}
+.imgTimeLeft{
+    left: 42%;
+}
+.form-control{
+    display: flex;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ced4da;
+    direction: rtl;
+    color: #ced4da;
+    text-align: center;
+}
+.rtd .timeInputEvent{
+    width: 40%;
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #0d6efd;
+}
+.timeRangeRight span{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.timeRangeRight .divInfoInput{
+    height: 40%;
+    width: 90%;
+}
+.divInfoInput span,
+.timeRange_rdt span{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 90%;
+    font-size: large;
+    color:slategrey;
+    padding: 0px;
+}
+.timeRange_rdt span{
+    width: 100%;
+}
+.costumerInfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hxnoCj{
+    justify-content: right;
+}
+.Step1Bottum{
+    height: 5%;
+    max-height: 5%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+.Step1Bottum img{
+    height: 40px;
+}
+
+/*Page 2 - Select Customer*/
+.Step2Main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.Step2MainInner{
+    height: 90%;
+    max-height: 90%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    justify-items: right;
+}
+.Step2MainInner .bSqufN,
+.Step3MainInner .bSqufN,
+.Step3MainInner .jbBJkG{
+    max-height: 100%;
+}
+.Step2MainInner .bSqufN::-webkit-scrollbar,
+.Step3MainInner .bSqufN::-webkit-scrollbar,
+.Step3MainInner .jbBJkG::-webkit-scrollbar{
+    display: none;
+}
+.Step3MainInner > .dtPhZQ div:first-child{
+    word-wrap: break-word;
+    text-overflow:clip;
+}
+.Step3MainInner > .hcgwbo{
+    overflow: auto;
+}
+.Step2Bottum{
+    height: 5%;
+    max-height: 5%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.customSearchCustomer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.customSearchCustomer img{
+    height: 30px;
+    padding-top: 5px;
+}
+.customSearchCustomer input{
+    width: 80%;
+    border: none;
+    direction: rtl;
+    font-weight: bolder;
+    font-size: 1.1em;
+    outline: none;
+    color: black;
+}
+.customSearchCustomer input::-webkit-input-placeholder{
+    color: black;
+}
+
+
+/*Page 3 - Select Inventoris*/
+.Step3Main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.Step3MainInner{
+    height: 83%;
+    max-height: 83%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+}
+.Step3MainInnerAccordion::-webkit-scrollbar{
+    display: none;
+}
+.Step3MainInner > .gNJUsR{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.Step3MainInner > .gNJUsR::-webkit-scrollbar{
+    display: none;
+}
+.Step3MainFooter{
+    height: 10%;
+    max-height: 10%;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+
+}
+.div1Footer, .div2Footer, .div3Footer{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    justify-content: right;
+    width: 20%;
+    word-wrap: break-word;
+}
+.div3Footer{
+    justify-content: center;
+    width:40%;
+}
+.div1Footer span, .div2Footer span, .div3Footer span{
+    padding-right: 10px;
+}
+.div1Footer label, .div2Footer label, .div3Footer label{
+    font-weight: bolder;
+    padding-right: 5px;
+
+}
+
+
+/*Page 4 - Info*/
+.Step3MainInnerAccordion{
+    height: 85%;
+    max-height: 85%;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#accordionInfo {
+    width: 100%;
+    height: auto;
+    max-height: 95%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.szh-accordion__item{
+    width: 90%;  
+    height: 20%;
+}
+.szh-accordion__item button{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding-left: 20px;
+    padding-right: 20px ;
+    border: #fff;
+    border-bottom: 4px solid #5391659f;
+    background-color: #5391652c;
+}
+.accordionHedaerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.accordionHedaerInfo label{
+    font-size: large;
+    font-weight: bold;
+    color: #0d6efd;
+}
+.accordionHedaerInfo img{
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+.accordionItemInfo{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px solid #5391659f;
+    border-right: 2px solid #5391659f;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+.accordionItemInfoLast{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #5391659f;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+.accordionItemInfoLast-div{
+    border-bottom: 1px solid #17B169;
+}
+.accordionItemInfoLast-div div label{
+    font-weight: bold;
+}
+.accordionItemInfo label{
+    font-weight: bold;
+}
+.sendEmailCustomer{
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.sendEmailCustomer a {
+    padding-right: 10px;
+}
+.sendEmailCustomer img{
+    height: 20px;
+}
+
+
+
+
+.Step3Bottum{
+    height: 10%;
+    max-height: 10%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.textInputAmount{
+    width: 100%;
+    border:1px solid slategrey;
+    border-radius: 5px;
+    outline: none;
+}
+.textInputAmount:valid,
+.textInputAmount:focus
+{
+    border:1px solid #5391659f;
+}
+.react-datetime-picker__inputGroup input[type="number" i] {
+    padding: 0px;
+    width: 10px;
+}
+.swal2-container{
+    z-index: 1400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#mainBodyMainPage{
+    width: 100%;
+    height: 100%;
+}
+#headerMainPage{
+    height: 10%;
+    padding: 0px 40px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+#headerMainPage h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+#innerMainPage{
+    height: 90%;
+    width: 100%;
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    align-items: center;
+}
+.buttonMainPage{
+    background-color:rgb(54, 136, 218);
+    border: 1px rgb(54, 136, 218);
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+#calanderRight{
+    background-color:white;
+    width: 95%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+
+
+
+
+
+
+
+.fc-direction-ltr{
+    direction: rtl;
+    text-align: center;
+}
+.fc .fc-scroller-harness{
+    direction: rtl;
+}
+colgroup{
+    direction: rtl;
+}
+.fc .fc-daygrid-day-top{
+    flex-direction: row;
+}
+.fc .fc-daygrid-day-number{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+.fc .fc-toolbar.fc-header-toolbar{
+    margin-bottom: 0;
+    padding: 10px;
+}
+.fc .fc-button-group{
+    border-radius: 15px;
+    border: 1px solid #2c3e50;
+    overflow: hidden;
+}
+.fc .fc-button-group button{
+    border: 0px;
+}
+.fc-listWeek-button .fc-button .fc-button-primary{
+    background-color: violet;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active{
+    background-color: #2c3e5064;
+}
+
+#fc-dom-86 {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #5391659f; ;
+}
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child){
+    border-radius: 0px;
+}
+
+
+
+
+
+
+.popUpEvents{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+}
+.innerPopUpEvents{
+    position:relative;
+    padding: 25px;
+    width: 40%;
+    height: 70%;
+    background-color: #fff;
+    border: 1px solid #2c3e506a;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.innerEvents1{
+    height: 5%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.innerEvents1 .closeBTN {
+    color: brown;
+}
+.innerEvents2{
+    height: 15%;
+    max-height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #5391659f;
+}
+.innerEvents2 .css-10mg1vw-MuiStepper-root{
+    direction: rtl;
+    width: 100%;
+}
+.innerEvents2 .css-n7tliy-MuiStep-root .css-zpcwqm-MuiStepConnector-root{
+    left: calc(50% + 20px);
+    right: calc(-50% + 20px);
+}
+.innerEvents2 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+    color: #5391659f ;
+}
+.innerEvents2 .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+    color: #17B169;
+}
+.innerEvents2 .css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+   margin-top: 2px; 
+}
+
+
+
+
+.innerEvents2 h1{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.innerEvents3{
+    height: 80%;
+    max-height: 80%;
+}
+
+.Step1Main{
+    height: 90%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.Step1MainInner1{
+    height: 10%;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+
+.Step1MainInner2{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.divInfoInput{
+    height: 20%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Step1MainInner2 .timeRange{
+    height: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.timeRangeRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.timeRangeRight span{
+    color: #17B169;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.timeRangeRight .divInfoInput{
+    height: 40%;
+    width: 90%;
+}
+.divInfoInput input,
+.divInfoInput .timeRange input{
+    font: inherit;
+    font-size: 0.7em;
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border:1px solid slategrey;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    text-align: right;
+    direction: rtl;
+}
+.divInfoInput span{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color:slategrey;
+    background-color: none;
+    padding: 0px;
+    transition: 0.5s;
+}
+.divInfoInput input:valid ~ span,
+.divInfoInput input:focus ~ span
+{
+    color: black;
+    transform: translateY(-22px);
+    background-color: white;
+    border-left:1px solid #5391659f;
+    border-right: 1px solid #5391659f;
+    padding: 0 5px 0 5px;
+    font-size: 0.8em;
+}
+.divInfoInput input:valid,
+.divInfoInput input:focus
+{
+    border:1px solid #5391659f;
+}
+.costumerInfo{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.hxnoCj{
+    justify-content: right;
+}
+.Step1Bottum{
+    height: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.Step2Main{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.Step2MainInner{
+    height: 85%;
+    max-height: 85%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    justify-items: right;
+}
+.Step2MainInner > .gNJUsR{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.Step2MainInner > .gNJUsR::-webkit-scrollbar{
+    display: none;
+}
+.Step3MainInner > .dtPhZQ div:first-child{
+    word-wrap: break-word;
+    text-overflow:clip;
+}
+.Step3MainInner > .hcgwbo{
+    overflow: auto;
+}
+.Step2Bottum{
+    height: 10%;
+    max-height: 10%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.Step3Main{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.Step3MainInner{
+    height: 85%;
+    max-height: 85%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items: center;
+}
+.Step3MainInnerAccordion::-webkit-scrollbar{
+    display: none;
+}
+.Step3MainInner > .gNJUsR{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.Step3MainInner > .gNJUsR::-webkit-scrollbar{
+    display: none;
+}
+
+
+.Step3MainInnerAccordion{
+    height: 85%;
+    max-height: 85%;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.Step3MainInnerAccordion #accordionInfo {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+#accordionInfo > #accordionInfoItem {
+    width: 90%;    
+}
+
+#accordionInfoItem button{
+    width: 100%;
+    text-align: right;
+    border: #fff;
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #5391659f;
+    
+    
+}
+#accordionInfoItem div#\:r0\:-{
+    background-color: #17B169;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.Step3Bottum{
+    height: 10%;
+    max-height: 10%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.textInputAmount{
+    width: 100%;
+    border:1px solid slategrey;
+    border-radius: 5px;
+    outline: none;
+}
+.textInputAmount:valid,
+.textInputAmount:focus
+{
+    border:1px solid #5391659f;
+}
+.react-datetime-picker__inputGroup input[type="number" i] {
+    padding: 0px;
+    width: 10px;
+}*/
+
+
+
+
+
+
+
+

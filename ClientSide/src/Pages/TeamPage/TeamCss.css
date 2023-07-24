@@ -1,0 +1,402 @@
+/*CSS for the pop up - add new employee*/
+.popUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.innerPopUp{
+    position:relative;
+    padding: 15px;
+    width: 650px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 5px 5px 50px -1px #f5f5f5;
+    border: 2px solid #5391659f;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.innerEmloyee1{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 5%;
+}
+.innerEmloyee2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #5391659f;
+    height: 10%;
+}
+.close-button {
+    float: right;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  
+.innerEmloyee2 h1{
+    font-size: large;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 5px;
+}
+.innerEmloyee3{
+    width: 100%;
+    height: 85%;
+    display:flex;
+    flex-direction:row-reverse;
+    padding-top: 5px;
+}
+.innerDiv3-1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 35px;
+}
+.innerDiv3-2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.innerDivUploadImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+.imgEmployee{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow:hidden;
+    border:1px solid slategrey;
+}
+.imgEmployee img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.leftinnerDiv-3{
+    height: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+}
+.input1{
+    height: 40px;
+    position:relative;
+    margin-top: 5px;
+    width: 45%;
+}
+.input1 input{
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid slategrey;
+    outline: none;
+    text-align: right;
+    font-size: 0.7em;
+    padding-right: 10px;
+    direction: rtl;
+}
+.input1 span{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color:slategrey;
+    background-color: none;
+    padding: 0px;
+    transition: 0.5s;
+}
+.genderSelect{
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    border:1px solid slategrey;
+    text-align: right;
+}
+#genderOption{
+    color: slategrey;
+    direction:rtl;
+    width: 50%;
+    text-align: right;
+    min-height: none;
+    font-size: 10px;
+
+}
+.input1 input:valid ~ span,
+.input1 input:focus ~ span
+{
+    color: black;
+    transform: translateY(-14px);
+    background-color:white;
+    border-left:1px solid #5391659f;
+    border-right: 1px solid #5391659f;
+    padding: 0 5px 0 5px;
+    font-size: 0.8em;
+}
+.input1 input:valid,
+.input1 input:focus
+{
+    border:1px solid #5391659f;
+}
+.innerPopUp .closeBtn{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+}
+.saveNewEmployee{
+    margin-top: 15px;
+}
+
+
+
+
+/*Employee Page*/
+#mainBodyTeam{
+    width: 100%;
+    height: 100%;
+}
+#headerTeam{
+    height: 10%;
+    padding: 0px 60px 0px 30px;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+#headerTeam h1 {
+    color: #17B169;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.addBOX{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: steelblue;
+    box-shadow: 0px 0px 15px 3px rgba(70, 131, 180, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+}
+.addBOX .icon{
+    color: #fff;
+    font-size: 2em;
+}
+#innerMainTeam{
+    width: 100%;
+    height: 90%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.JobInfo{
+    width: 97%;
+    height: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #17b16939;
+}
+.headerInnerInfo{
+    height: 10%;
+    padding-left: 30px;
+    padding-right: 15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    border-bottom: 2px solid #17B169;
+}
+.headerInnerInfo .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.searchBox{
+    position:relative;
+    height: 70%;
+}
+.searchBox input{
+    padding-right: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 100%;
+    text-align: right;
+    outline: none;
+    font-size: 0.9em;
+    direction: rtl;
+}
+.searchBox span{
+    position: absolute;
+    color: #ccc;
+    right: 10px;
+    top: 7px;
+    transition: 0.5s;
+    padding: 0 5px 0 5px;
+}
+.searchBox input:valid ~ span,
+.searchBox input:focus ~ span
+{
+    color: #17B169;
+    transform: translateY(-20px);
+    background-color:white;
+}
+.searchBox input:valid,
+.searchBox input:focus
+{
+    border: 1px solid #17B169;
+}
+.selectBox{
+    position:relative;
+    height: 70%;
+    margin-right: 20px;
+}
+.selectBox select{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 100%;
+    text-align: right;
+    outline: none;
+}
+.selectBox span{
+    position: absolute;
+    color: black;
+    background-color: white;
+    right: 15px;
+    bottom: 27px;
+    padding: 0 5px 0 5px;
+}
+.mainInfo{
+    height: 90%;
+    margin-top: 10px;
+}
+.dataTableEmployee{
+    height: 100%;
+}
+
+
+/*Table Employee CSS*/
+.hcgwbo{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.iyNGkF{
+    padding: 0px;
+    margin: 0px;
+}
+#cell-1-undefined #cell-2-undefined{
+    padding: 0px;
+}
+.infoDivEmployee{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.infoDivEmployee div{
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;
+}
+.infoDivEmployee label{
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+.imgBXTbaleEmployee{
+    height: 55px;
+    width: 55px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #043927;
+}
+.imgBXTbaleEmployee img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.popUpSettingEmployee{
+    position: absolute;
+    right: 1px;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display:flex;
+    justify-content:space-between;
+    height: 35px;
+    width: 65px;
+    box-shadow: 0px 0px 15px 0.5px #17b16939;
+}
+.popUpSettingEmployee ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0px;
+    margin: 0px;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    list-style-type:none;
+    height: 100%;
+    width: 100%;
+}
+.liDeleteIcon{
+    border-style: double;
+    border: 1px solid brown;
+    border-radius: 5px;
+    color: brown;
+}
+.liUpdateIcon{
+    border-style: double;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: green;
+}
+
+
+
+
+
+.employeeImgTable{
+    height: 50%;
+    width: 50%;
+    border: 20px;
+}

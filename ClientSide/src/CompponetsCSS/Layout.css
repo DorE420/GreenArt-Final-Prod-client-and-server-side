@@ -1,0 +1,95 @@
+/*The css code for the Layout - and all the pages templet*/
+.root{
+    display:grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-columns: 1fr 0.15fr ;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+        "Header NaveBar"
+        "MainBody NaveBar";
+    text-align: right;
+    align-items: right;
+    overflow: hidden;
+}
+
+/*Navigation Tool bar divs*/
+#NaveBar{
+    grid-area: NaveBar;
+    box-shadow: 0 1px 8px rgb(255, 255, 255);
+    border-left: 1px solid #ffffff;
+    background-color:whitesmoke;
+    height: 100vh;
+    display: block;
+}
+.NaveBarContainer{
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template-rows: 1.2fr 9fr; 
+    grid-template-areas: 
+    "imgLogoContainer"
+    "divBottunsSlideBar"
+}
+.imgLogoContainer{
+    grid-area: imgLogoContainer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgLogoSlideBar{
+    width: 100%;
+    height: 100%;
+}
+.divBottunsSlideBar{
+    grid-area: divBottunsSlideBar;
+    height: 100%;
+    display:contents;
+    justify-content: space-between;
+}
+.listItem{
+    width: 100%;
+    height:9%;
+}
+.listItem:hover {
+  background-color: #e0e0e0;
+}
+.iconItem{
+    position:absolute;
+    right: 15px;
+    color: #000000b5;
+    top: 24px;
+}
+.textItem{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    color: #000000b5;
+    white-space: nowrap;
+}
+  
+  
+/*Header Dives - Layout*/
+#Header{
+    background-color: #539165;
+    grid-area: Header;
+    box-shadow: 0 1px 8px rgb(255, 255, 255);
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    height: 10vh;
+    display: block;
+}
+#headerContainer{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/*The main body*/
+#MainBody{
+    grid-area: MainBody;
+    height: 90vh;
+    display: block;
+}
